@@ -1,0 +1,8 @@
+<div class="navbar">
+  <div class="logo">SimpleAirBnb</div>
+  <% form_for do |f| %>
+    <%= f.text_field :query %>
+    <%= f.submit :search %>
+  <% end %>
+  <%= link_to "Add Flat", root_path, :class => "btn btn-primary" %>
+</div>
